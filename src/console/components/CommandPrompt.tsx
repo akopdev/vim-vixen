@@ -10,7 +10,9 @@ import { useExecCommand, useHide } from "../app/hooks";
 const COMPLETION_MAX_ITEMS = 33;
 
 const ConsoleWrapper = styled.div`
-  border-top: 1px solid gray;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  position: relative;
 `;
 
 interface Props {
@@ -87,17 +89,17 @@ const CommandPromptInner: React.FC<Props> = ({ initialInputValue }) => {
 
   return (
     <ConsoleWrapper>
-      <Completion
-        size={COMPLETION_MAX_ITEMS}
-        completions={completions}
-        select={select}
-      />
       <Input
-        prompt={":"}
+        prompt={">"}
         onBlur={onBlur}
         onKeyDown={onKeyDown}
         onChange={onChange}
         value={select == -1 ? inputValue : currentValue}
+      />
+      <Completion
+        size={COMPLETION_MAX_ITEMS}
+        completions={completions}
+        select={select}
       />
     </ConsoleWrapper>
   );

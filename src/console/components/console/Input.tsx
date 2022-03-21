@@ -5,15 +5,22 @@ const Container = styled.div`
   background-color: ${({ theme }) => theme.commandBackground};
   color: ${({ theme }) => theme.commandForeground};
   display: flex;
+  border-bottom: 3px solid #fff;
+  padding: 5px;
 `;
 
 const Prompt = styled.i`
-  font-style: normal;
+  margin: 0 5px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #eb6f92;
 `;
 
 const InputInner = styled.input`
+  font-size: 16px;
   border: none;
   flex-grow: 1;
+  outline: 0;
   background-color: ${({ theme }) => theme.commandBackground};
   color: ${({ theme }) => theme.commandForeground};
 `;

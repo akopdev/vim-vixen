@@ -6,8 +6,11 @@ const Li = styled.li<{ shown: boolean }>`
   background-color: ${({ theme }) => theme.completionTitleBackground};
   color: ${({ theme }) => theme.completionTitleForeground};
   font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
   margin: 0;
-  padding: 0;
+  padding: 3px 25px !important;
+  position: relative;
 `;
 
 interface Props extends React.HTMLAttributes<HTMLElement> {

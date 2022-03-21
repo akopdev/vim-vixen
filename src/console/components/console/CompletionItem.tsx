@@ -28,6 +28,7 @@ const Caption = styled.span`
   width: 40%;
   text-overflow: ellipsis;
   overflow: hidden;
+  padding-top: 5px;
 `;
 
 const Description = styled.span`
@@ -36,6 +37,7 @@ const Description = styled.span`
   width: 60%;
   text-overflow: ellipsis;
   overflow: hidden;
+  padding-top: 5px;
 `;
 
 interface Props extends React.HTMLAttributes<HTMLElement> {

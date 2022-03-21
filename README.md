@@ -1,7 +1,8 @@
 # Vim Vixen
+It Brings [Rose Pine](https://github.com/rose-pine/rose-pine-theme) vibes to the official Vimex extension. 
+Something that I have done for myself, and most probably for you it is better to go with the official one.
 
-[![Join the chat room on Gitter for vim-vixen/vim-vixen](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/vim-vixen/vim-vixen)
-[![GitHub Actions](https://github.com/ueokande/vim-vixen/workflows/Build/badge.svg)](https://github.com/ueokande/vim-vixen/actions?query=workflow%3ABuild)
+## About
 
 Vim Vixen is a Firefox add-on which allows you to easily navigate the web by
 keyboard. Since version 57, Firefox has migrated to the WebExtensions API and

@@ -31,17 +31,17 @@ export const LightTheme: ThemeProperties = {
 };
 
 export const DarkTheme: ThemeProperties = {
-  completionTitleBackground: "#052027",
+  completionTitleBackground: "#191724",
   completionTitleForeground: "white",
-  completionItemBackground: "#2f474f",
+  completionItemBackground: "#2a273f",
   completionItemForeground: "white",
   completionItemDescriptionForeground: "#86fab0",
-  completionSelectedBackground: "#eeff41",
+  completionSelectedBackground: "#ffffff",
   completionSelectedForeground: "#000000",
-  commandBackground: "#052027",
+  commandBackground: "#2a273f",
   commandForeground: "white",
-  consoleErrorBackground: "red",
+  consoleErrorBackground: "#eb6f92",
   consoleErrorForeground: "white",
-  consoleInfoBackground: "#052027",
+  consoleInfoBackground: "#fff",
   consoleInfoForeground: "#ffffff",
 };
