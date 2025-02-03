@@ -23,7 +23,7 @@ const Container = styled.li<{
   white-space: pre;
 `;
 
-const Caption = styled.span`
+const Primary = styled.span`
   display: inline-block;
   width: 40%;
   text-overflow: ellipsis;
@@ -31,7 +31,7 @@ const Caption = styled.span`
   padding-top: 5px;
 `;
 
-const Description = styled.span`
+const Secondary = styled.span`
   display: inline-block;
   color: ${({ theme }) => theme.completionItemDescriptionForeground};
   width: 60%;
@@ -43,19 +43,19 @@ const Description = styled.span`
 interface Props extends React.HTMLAttributes<HTMLElement> {
   shown: boolean;
   highlight: boolean;
-  caption?: string;
-  url?: string;
+  primary?: string;
+  secondary?: string;
   icon?: string;
 }
 
 const CompletionItem: React.FC<Props> = (props) => (
   <Container
     icon={props.icon || ""}
-    aria-labelledby={`completion-item-${props.caption}`}
+    aria-labelledby={`completion-item-${props.primary}`}
     {...props}
   >
-    <Caption id={`completion-item-${props.caption}`}>{props.caption}</Caption>
-    <Description>{props.url}</Description>
+    <Primary id={`completion-item-${props.primary}`}>{props.primary}</Primary>
+    <Secondary>{props.secondary}</Secondary>
   </Container>
 );
 

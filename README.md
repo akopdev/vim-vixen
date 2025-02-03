@@ -4,6 +4,10 @@ Something that I have done for myself, and most probably for you it is better to
 
 ## About
 
+* * *
+:warning: **This project is no longer under active maintainenance.  Check the new project [Vimmatic](https://github.com/ueokande/vimmatic).  See [the announcement](https://github.com/ueokande/vim-vixen/issues/1494) in more details.**
+* * *
+
 Vim Vixen is a Firefox add-on which allows you to easily navigate the web by
 keyboard. Since version 57, Firefox has migrated to the WebExtensions API and
 has dropped support for legacy add-ons. Vim Vixen is a new choice for Vim users
